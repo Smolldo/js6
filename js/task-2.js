@@ -7,7 +7,7 @@ const refs ={
 };
 
 const calc = () =>{
-    const l= refs.userInput.value.match(/[a-z]/g).length;
+    const l= refs.userInput.value.match(/[A-Za-zА-Яа-яЁё]/g).length;
     const s = refs.userInput.value.match(/[0-9]/g).length;
     refs.letSpan.textContent = `Symbols in string: ${l}`;
     refs.symSpan.textContent = `Numbers in string: ${s}`;
